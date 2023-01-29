@@ -1,5 +1,5 @@
 # Define list
-nombres = ['Juan', 'Karla', 'Ricardo', 'Maria']
+nombres = ['Juan', 'Karla', 'Ricardo', 'Maria']  # List are mutable
 # Print list nombres
 print(nombres)
 # Access to one element of list 'nombres'
