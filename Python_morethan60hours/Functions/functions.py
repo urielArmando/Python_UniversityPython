@@ -55,3 +55,35 @@ def multiplication(*args: int):
 
 
 print(multiplication(2, 5, 10))
+
+
+# pass key, value to function or dictionaries
+def list_terms(**kwargs):  # Kwargs don't necessary
+    for key, value in kwargs.items():
+        print(f'{key}: {value}')
+
+
+list_terms(IDE='Integrated Development Environment', PK='Primary Key')
+
+
+# pass list element to function
+def display_names(names):
+    for name in names:
+        print(name)
+
+
+names = ['Juan', 'Karla', 'Uriel']
+display_names(names)
+display_names('Carlos')  # Print ['C', 'a', 'r', 'l', 'o', 's']
+display_names((10, 11))  # Sending (tuple) or [list] to function| display_names(10, 11) => error
+
+
+# Recursive functions example with factorial | call the function to return 1 !!!Consult more information
+def factorial(number):
+    if number == 1:
+        return 1
+    else:
+        return number * factorial(number-1)
+
+
+print(factorial(5))
